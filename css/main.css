@@ -622,3 +622,45 @@ margin-top: 50px;
 	}
 }
 /* End copyright */
+
+/* Start Arrow 
+.arrow{
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+	z-index: 9999
+}
+.arrow i{
+	border: 2px solid #7B7B7B;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	line-height: 32px;
+	cursor: pointer;
+	color: #fff;
+}
+.arrow i:hover{
+	background-color: #777;
+}
+/* End Arrow */
+
+
+#scroll-top {
+	width:50px;
+	height:40px;
+	color:#fff;
+	background-color:#ed1d24;
+	border-radius: 50%;
+	font-size: 12px;
+	text-align:center;
+	position:fixed;
+	right:15px;
+	bottom:10px;
+	z-index:9999;
+	right: -70px;
+	transition: all 1s ease-in-out;
+	cursor:pointer
+}

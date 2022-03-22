@@ -21,4 +21,57 @@ $('.featured-work ul li').on('click', function (){
 	}
 
 
+
+
+	$('.arrow').click(function(){$('html, body').animate({
+
+		scrollTop: $('.home').offset().top
+		
+	
+		}, 1000);
+	});
+
+
+
+
+	var scrollButton = $("#scroll-top");
+// Caching The Scroll Top Element
+    
+$(window).scroll(function () {
+        
+	if ($(this).scrollTop() >= 85) {
+		
+		scrollButton.css('right', '30px');
+		$('.arrow').fadeOut();
+
+		
+	} else {
+		
+		scrollButton.css('right', '-70px');
+		$('.arrow').fadeIn();
+	}
+});
+
+// Click On Button To Scroll Top
+
+scrollButton.click(function () {
+	
+	$("html,body").animate({ scrollTop : 0 }, 600);
+	
+
+});
+	// Trigger Nice Scroll Plugin
+    
+    $('html').niceScroll({
+        
+		// cursorcolor: '#f7600e',
+		cursorcolor: '#8e44ad',
+        cursorwidth: 10,
+		cursorborderradius: 50,
+		cursorborder: '1px solid #8e44ad'
+
+        // cursorborder: '1px solid #f7600e'
+        
+    });
+	
 });
